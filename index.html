@@ -18,7 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/modal.css">
   </head>
   <body class="page">
     <header class="header">
@@ -53,7 +54,7 @@
             <li class="list contacts-list">
               <a class="link contacts-link color-link" href="mailto:info@devstudio.com">
                   <svg class="sprite-contact" style="height:16px; width: 10px">
-                    <use href="./img/symbol-defs.svg#icon-smartphone-2-1"></use>
+                    <use href="./img/sprite-telephone.svg#icon-smartphone-2-1"></use>
                   </svg>+38 096 111 11 11</a>
             </li>
           </ul>
@@ -61,11 +62,11 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero overlay">
         <div class="container">
           <div class="hero-content">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-button title">Замовити послугу</button>
+            <button class="hero-button title data-modal-close" data-modal-open>Замовити послугу</button>
           </div>
       </section>
       <section class="advantages container-advantages">
@@ -409,5 +410,15 @@
       </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+          <button data-modal-close class="modal-button">
+            <svg class="close-icon" height="18", width="18">
+              <use href="./img/sprite-close.svg#icon-close-icon"></use>
+            </svg>
+            </button>
+      </div>
+  </div>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
