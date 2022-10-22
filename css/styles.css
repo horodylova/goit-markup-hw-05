@@ -10,6 +10,7 @@
 --color-blue: #2196f3;
 --color-white: #ffffff;
 --color-link: #AFB1B8;
+--transition-duration: 250ms;
 }
  
 *,
@@ -689,8 +690,7 @@ img {
 
     color: var(--color-white);
     background-color: rgba(33, 150, 243, 0.9)
-
     padding: 63px 24px;
-
-
+    transform:translateY(100%)
+    transition: transform var(--transition-duration), 
 }
