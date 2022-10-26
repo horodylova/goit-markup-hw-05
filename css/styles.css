@@ -656,6 +656,19 @@ img {
     fill: var(--color-white);
     background-color: rgba(255, 255, 255, 0.1);
 
+     /* transition-property: background-color; */
+     transition-duration: color var(--transition-duration);
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+    background-color: var(--color-blue);
+}
+
+.team-media-footer {
+    fill: var(--color-white);
 }
 
 /* ----Секція Portfolio ------ */
