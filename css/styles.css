@@ -168,8 +168,10 @@ img {
 
     display: block;
     width: 100%;
-    height: 1px;
+    height: 4px;
     background-color: var(--color-blue);
+
+    border-radius: 2px;
 
     display: none;
 }
