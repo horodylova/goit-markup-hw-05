@@ -11,7 +11,7 @@
 --color-white: #ffffff;
 --color-link: #AFB1B8;
 --transition-duration: 250ms;
-
+--transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
  
@@ -117,9 +117,7 @@ img {
 .color-link {
     fill: var(--color-link);
 
-    transition-property:var(--color-blue);
-    transition-duration: color var(--transition-duration);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .color-link:hover,
@@ -158,7 +156,7 @@ img {
     margin-left: 93px;
 }
 
-.nav-link::after {
+.current::after {
     content: "";
 
     position: absolute;
@@ -173,16 +171,10 @@ img {
 
     border-radius: 2px;
 
-    display: none;
-
-    transition: var(--transition-duration);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration) var(--transition-timing-function);
 
 }
 
-.nav-link:hover::after {
-    display: block;
-}
 
 .container-nav-logo {
     display: flex;
@@ -197,6 +189,7 @@ img {
     display: flex;
     margin-left: auto;
     align-items: center;
+    gap: 30px;
 }
 
 .nav-link {
@@ -212,9 +205,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--color-grey);
 
-    transition-property:var(--color-blue);
-    transition-duration: color var(--transition-duration);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration) var(--transition-timing-function);
 
 }
 
@@ -311,9 +302,7 @@ img {
 
     border: 0
 
-    transition-prorerty: background-color;
-    transition-duration:var(--transition-duration);
-    transition-timing-function: linear;
+    transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .hero-button:hover,
@@ -461,6 +450,7 @@ img {
     background-color: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 .team-title {
@@ -492,8 +482,7 @@ img {
 }
 
 .color-link {
-    transition: background-color var(--color-blue) var(--color-blue), color var(--color-white) var(--color-white);
-}
+    transition: color var(--transition-duration) var(--transition-timing-function);}
 
 .team-description {
     border: 1px;
@@ -502,11 +491,16 @@ img {
     border-radius: 4px;
 
     padding: 30px 0;
+    padding-bottom: 30px;
+    text-align: center;
+    
 }
 
 .team-media-list {
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
 
 }
 
@@ -521,9 +515,7 @@ img {
     color: var(--color-link);
     border-radius: 50%;
 
-    /* transition-property: background-color; */
-    transition-duration: color var(--transition-duration);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration) var(--transition-timing-function);
 
 }
 
@@ -536,9 +528,9 @@ img {
 
 /* ---Секція Клієнти---- */
 
-.container-clients {
+.clients {
     padding: 94px 0;
-}
+} 
 
 .clients-title {
     color: var(--color-grey);
@@ -554,6 +546,8 @@ img {
 
 .client-logo {
     gap: 30px;
+
+    width: 170px;
     
     display: flex;
     
@@ -576,9 +570,7 @@ img {
     height: 92px;
     width: 170px;
 
-    transition-property: background-color;
-    transition-duration: color var(--transition-duration);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration) var(--transition-timing-function);
 
 }
 
@@ -605,7 +597,7 @@ img {
 .footer {
     background-color: var(--background-elements);
 
-    padding: 60px 0;
+    padding: 0;
     display: block;
 }
 
@@ -660,9 +652,7 @@ img {
     fill: var(--color-white);
     background-color: rgba(255, 255, 255, 0.1);
 
-     /* transition-property: background-color; */
-     transition-duration: color var(--transition-duration);
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration) var(--transition-timing-function);
 
 }
 
@@ -713,9 +703,7 @@ img {
     line-height: 1.62;
     padding: 6px 22px;
 
-    transition-property:var(--color-blue);
-    transition-duration: color var(--transition-duration);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .button-portfolio:focus,
@@ -744,9 +732,7 @@ img {
     display: block;
     background-color:var(--color-white); 
 
-    transition-property: rgba(33, 150, 243, 0.9);
-    transition-duration: color var(--transition-duration);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .projects-link:hover,
