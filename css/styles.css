@@ -797,9 +797,14 @@ img {
     overflow: hidden;
 }
 
+.projects-link {
+    position: relative;
+    overflow: hidden;
+}
+
 .projects-overlay-text {
    
-    transform:translateY(100%);
+    transform:translateY(0%);
     transition: transform var(--transition-duration)
       var(--transition-timing-function);
     overflow: auto;
@@ -818,6 +823,8 @@ img {
     padding: 63px 24px;
     height: 100%;
 }
+
+
 
  
  
