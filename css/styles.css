@@ -21,7 +21,7 @@
     box-sizing: border-box;
 }
 
-p, h1, h2, h3: {
+p, h1, h2, h3 {
     margin: 0;
 }
 
@@ -305,8 +305,7 @@ img {
     width: 216px;
     height: 50px;
 
-    border: 0
-
+    border: 0;
     transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
@@ -383,7 +382,7 @@ img {
 }
 
 .advantages-list {
-    width: calc((100% - 90px)) / 4);
+    width: calc((100% - 90px) / 4);
 }
 
 .advantages-note {
