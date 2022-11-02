@@ -522,8 +522,9 @@ img {
     color: var(--color-link);
     border-radius: 50%;
 
-    transition: color var(--transition-duration) var(--transition-timing-function);
-
+    transition: background-color var(--transition-duration)
+    var(--transition-timing-function),
+  color var(--transition-duration) var(--transition-timing-function);
 }
 
 .media:hover,
@@ -553,12 +554,8 @@ img {
 
 .client-logo {
     gap: 30px;
-
     width: 170px;
-    
     display: flex;
-    
-    
     margin: 0 auto;
    
 }
@@ -577,8 +574,8 @@ img {
     height: 92px;
     width: 170px;
 
-    transition: color var(--transition-duration) var(--transition-timing-function);
-
+    transition: color var(--transition-duration) var(--transition-timing-function),
+    border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .team-media-icon {
@@ -710,7 +707,10 @@ img {
     line-height: 1.62;
     padding: 6px 22px;
 
-    transition: color var(--transition-duration) var(--transition-timing-function);
+    transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
 .button-portfolio:focus,
