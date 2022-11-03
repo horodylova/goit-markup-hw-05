@@ -560,7 +560,7 @@ img {
 }
 
 .client-icon {
-    fill: var(--color-link);
+    /* fill: var(--color-link); */
 
     width: 106px;
     height: 60px;
@@ -572,9 +572,10 @@ img {
 
     height: 92px;
     width: 170px;
+    transition: background-color var(--transition-duration)
+    var(--transition-timing-function),
+  color var(--transition-duration) var(--transition-timing-function); 
 
-    transition: color var(--transition-duration) var(--transition-timing-function),
-    border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .team-media-icon {
@@ -589,19 +590,17 @@ img {
 
 /* -----Секція Футер---- */
 
-.footer-group {
-    display: flex;
-    padding: 60px 880px 60px 0;
-    margin: 0 auto;
-    gap: 70px;
-
-}
-
 .footer {
     background-color: var(--background-elements);
 
-    padding: 0;
-    display: block;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+}
+
+.footer-address {
+    margin-right: 70px;
 }
 
 .footer-logo {
