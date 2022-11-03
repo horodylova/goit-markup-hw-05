@@ -594,6 +594,10 @@ img {
     background-color: var(--background-elements);
 
     padding: 60px 0;
+    
+}
+
+.footer-group {
     display: flex;
     align-items: center;
     align-items: baseline;
@@ -601,6 +605,7 @@ img {
 
 .footer-address {
     margin-right: 70px;
+    margin-bottom: 9px;
 }
 
 .footer-logo {
